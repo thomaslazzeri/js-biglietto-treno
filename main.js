@@ -24,6 +24,8 @@ let prezzotot = km * prezzokm;
 const scontoMinorenni = 0.20;
 const scontoOver65 = 0.40;
 
+console.log(prezzotot);
+
 // programma per calcolare il prezzo totale per minori e over 65
 if (età < 18) {
     prezzotot = prezzotot - (prezzotot * scontoMinorenni);
