@@ -13,15 +13,18 @@
 //100km, 10 anni => prezzo corretto:  €16.80
 //100km, 70 anni => prezzo corretto: €12.60
 
+// prompt per chiedere i km e l'età
 const km = prompt("Quanti chilometri vuoi percorrere?");
 const età = prompt("Quanti anni hai?");
 
+// variabili con i prezzi e gli sconti
 const prezzokm = 0.21;
 let prezzotot = km * prezzokm;
 
 const scontoMinorenni = 0.20;
 const scontoOver65 = 0.40;
 
+// programma per calcolare il prezzo totale per minori e over 65
 if (età < 18) {
     prezzotot = prezzotot - (prezzotot * scontoMinorenni);
     console.log(prezzotot);
