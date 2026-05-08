@@ -21,3 +21,12 @@ let prezzotot = km * prezzokm;
 
 const scontoMinorenni = 0.20;
 const scontoOver65 = 0.40;
+
+if (età < 18) {
+    prezzotot = prezzotot - (prezzotot * scontoMinorenni);
+    console.log(prezzotot);
+}
+else if (età > 65) {
+    prezzotot = prezzotot - (prezzotot * scontoOver65);
+    console.log(prezzotot);
+}
