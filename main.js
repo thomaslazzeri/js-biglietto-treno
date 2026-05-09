@@ -33,11 +33,14 @@ const scontoMinorenni = 0.20;
 const scontoOver65 = 0.40;
 
 // programma per calcolare il prezzo totale per minori e over 65
-if (età < 18) {
+if (età <= 18) {
     prezzotot = prezzotot - (prezzotot * scontoMinorenni);
     console.log(prezzotot.toFixed(2));
 }
-else if (età > 65) {
+else if (età >= 65) {
     prezzotot = prezzotot - (prezzotot * scontoOver65);
+    console.log(prezzotot.toFixed(2));
+}
+else if (18 + 65) {
     console.log(prezzotot.toFixed(2));
 }
