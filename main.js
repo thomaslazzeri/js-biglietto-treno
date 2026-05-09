@@ -32,14 +32,12 @@ let fisso = prezzotot.toFixed(2);
 const scontoMinorenni = 0.20;
 const scontoOver65 = 0.40;
 
-console.log(prezzotot);
-
 // programma per calcolare il prezzo totale per minori e over 65
 if (età < 18) {
     prezzotot = prezzotot - (prezzotot * scontoMinorenni);
-    console.log(prezzotot);
+    console.log(prezzotot.toFixed(2));
 }
 else if (età > 65) {
     prezzotot = prezzotot - (prezzotot * scontoOver65);
-    console.log(prezzotot);
+    console.log(prezzotot.toFixed(2));
 }
