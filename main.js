@@ -20,27 +20,22 @@
 // esclusivamente con interi.
 
 // prompt per chiedere i km e l'età
-const km = prompt("Quanti chilometri vuoi percorrere?");
-const età = prompt("Quanti anni hai?");
+const km = parseFloat(prompt("Quanti chilometri vuoi percorrere?"));
+const age = parseInt(prompt("Quanti anni hai?"));
+
 
 // variabili con i prezzi e gli sconti
 const prezzokm = 0.21;
 let prezzotot = km * prezzokm;
 
-let fisso = prezzotot.toFixed(2);
-
 const scontoMinorenni = 0.20;
 const scontoOver65 = 0.40;
 
 // programma per calcolare il prezzo totale per minori e over 65
-if (età <= 18) {
+if (age <= 18) {
     prezzotot = prezzotot - (prezzotot * scontoMinorenni);
-    console.log(prezzotot.toFixed(2));
 }
-else if (età >= 65) {
+else if (age >= 65) {
     prezzotot = prezzotot - (prezzotot * scontoOver65);
-    console.log(prezzotot.toFixed(2));
 }
-else if (18 + 65) {
-    console.log(prezzotot.toFixed(2));
-}
+console.log(prezzotot.toFixed(2));
