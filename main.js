@@ -23,7 +23,6 @@
 const km = parseFloat(prompt("Quanti chilometri vuoi percorrere?"));
 const age = parseInt(prompt("Quanti anni hai?"));
 
-
 // variabili con i prezzi e gli sconti
 const prezzokm = 0.21;
 let prezzotot = km * prezzokm;
